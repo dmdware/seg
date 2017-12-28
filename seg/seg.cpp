@@ -106,6 +106,9 @@ int main()
 		velrp[0] *= fabs(dot);
 		velrp[1] *= fabs(dot);
 
+		velrp[0] = velrp[0] - velrp[0] * srf;
+		velrp[1] = velrp[1] - velrp[1] * srf;
+
 		posr[0] += velrp[0];
 		posr[1] += velrp[1];
 
