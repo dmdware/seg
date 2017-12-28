@@ -51,7 +51,7 @@ int main()
 
 	printf("enter acceleration of attractor at 1 m eg 0.1: ");
 	scanf("%f", &aa1m);
-	aa1m *= DT;
+	aa1m *= DT * DT;
 
 	printf("enter starting velocity forward eg 1000: ");
 	scanf("%f", &velr[0]);
