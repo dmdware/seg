@@ -77,8 +77,8 @@ int main()
 		d = sqrtf(dp[0] * dp[0] + dp[1] * dp[1]);
 		printf("ac %f\r\n", d);
 
-		ac[0] = dp[0] / (d*d*d);
-		ac[1] = dp[1] / (d*d*d);
+		ac[0] = dp[0] * aa1m / (d*d*d);
+		ac[1] = dp[1] * aa1m / (d*d*d);
 		printf("ac %f,%f\r\n", ac[0], ac[1]);
 
 		d = sqrtf(velr[0] * velr[0] + velr[1] * velr[1]);
